@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VitaMente | Kit de movilidad y estimulación cognitiva</title>
+  <meta name="description" content="VitaMente: kit de ejercicio físico y estimulación cognitiva para adultos de 60 a 75 años. Tu vitamina diaria.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,100&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 64 64">
+    <circle cx="27" cy="13" r="6.5" fill="currentColor"/>
+    <path d="M30 56 C 24 42, 10 36, 6 26 C 18 26, 28 36, 30 56 Z" fill="currentColor"/>
+    <path d="M30 56 C 34 40, 40 26, 50 18 C 58 12, 62 22, 56 30 C 50 38, 40 46, 30 56 Z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="VitaMente, inicio"><svg style="color:var(--forest)"><use href="#mark"/></svg><span>VitaMente</span></a>
+    <ul>
+      <li><a href="#kit">El kit</a></li>
+      <li><a href="#enfoques">Enfoques</a></li>
+      <li><a href="#rutina">Tu rutina</a></li>
+      <li><a href="#mente">Juego mental</a></li>
+      <li><a href="#comprar">Precio</a></li>
+    </ul>
+    <div class="tools">
+      <button class="icon-btn" id="fontBtn" type="button" aria-label="Cambiar tamaño de letra" title="Tamaño de letra">A<span style="font-size:.75em">A</span>+</button>
+      <a class="btn primary sm" href="#comprar">Lo quiero</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="blob dark" style="width:340px;height:340px;left:-170px;top:-120px;border-radius:0 0 70% 30%/0 0 60% 40%"></div>
+  <div class="blob" style="width:260px;height:300px;right:-120px;bottom:-60px;border-radius:60% 0 0 40%/50% 0 0 50%"></div>
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow">Kit de movilidad y estimulación cognitiva</p>
+      <h1>Entrena hoy para no depender de nadie <em>mañana.</em></h1>
+      <p class="lead">¿Y si mantenerse independiente en la tercera edad pudiera empezar con unos minutos al día? VitaMente reúne ejercicio físico suave y retos para la mente en una sola caja.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#kit">Explorar el kit →</a>
+        <a class="btn ghost" href="#rutina">Probar una rutina</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Para adultos de 60 a 75 años</span>
+        <span class="chip">4 enfoques en un kit</span>
+        <span class="chip">Bajo impacto, en casa</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="shape"></div>
+      <img src="abuelo.webp" alt="Adulto mayor sonriente levantando dos costales de arena verdes">
+      <div class="badge-price"><div><small>Solo</small><b>$369</b><small>MXN</small></div></div>
+    </div>
+  </div>
+</header>
+
+<section id="problema">
+  <div class="wrap">
+    <div class="panel pg">
+      <div class="goal">
+        <p class="eyebrow">Problema &amp; objetivo</p>
+        <h2>Con los años se pierde músculo. La buena noticia: se puede entrenar.</h2>
+        <p class="lead">Entre los 60 y 75 años la pérdida de masa muscular (sarcopenia) afecta la fuerza, el equilibrio y la confianza para hacer las cosas solo. Nuestro objetivo es simple:</p>
+        <p class="big">Mantener una vida activa e independiente.</p>
+        <div class="who" aria-label="Perfil de usuario">
+          <span class="chip">Independientes</span><span class="chip">Activos</span><span class="chip">Buscan actividad física sencilla</span>
+        </div>
+      </div>
+      <div>
+        <div class="toggle" role="group" aria-label="Comparar">
+          <button type="button" id="tgOff" aria-pressed="true">Sin actividad</button>
+          <button type="button" id="tgOn" aria-pressed="false">Con VitaMente</button>
+        </div>
+        <div class="bars" id="bars"></div>
+        <p class="note">Ilustración conceptual de las áreas que trabaja el kit, no una medición clínica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kit" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">¿Qué incluye?</p>
+      <h2>Todo en un solo kit. Toca cada pieza.</h2>
+      <p class="lead">Cada elemento tiene un propósito: fuerza, flexibilidad, equilibrio o concentración. Selecciona una pieza de la caja para conocer cómo se usa.</p>
+    </div>
+    <div class="kit">
+      <div>
+        <div class="box" id="box">
+          <img src="kit.webp" alt="Caja VitaMente abierta con ligas de colores, pelotas, conos, costales, liga larga y cuadernillo">
+        </div>
+        <div class="extras" id="extras"></div>
+      </div>
+      <aside class="info" id="info" aria-live="polite"></aside>
+    </div>
+  </div>
+</section>
+
+<section id="enfoques" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="pillar-intro">
+      <div class="sec-head" style="margin:0">
+        <p class="eyebrow">Cuatro enfoques</p>
+        <h2>Cuerpo y mente, paso a paso.</h2>
+      </div>
+      <p class="lead" style="max-width:40ch">Ejemplos de las tarjetas ilustradas que vienen en la caja.</p>
+    </div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="ex-grid" id="exGrid" role="tabpanel"></div>
+  </div>
+</section>
+
+<section id="rutina">
+  <div class="wrap rt">
+    <div class="forest-panel">
+      <div class="blob" style="width:200px;height:200px;right:-80px;top:-80px;border-radius:50%;opacity:.25"></div>
+      <p class="eyebrow">Arma tu rutina</p>
+      <h2 style="margin:10px 0 14px">¿Cuántos minutos tienes hoy?</h2>
+      <p style="opacity:.85;margin-bottom:20px">Elige el tiempo y te armamos una sesión que combina los cuatro enfoques. Después dale a Empezar y sigue el reloj.</p>
+      <div class="seg" role="group" aria-label="Duración" id="seg">
+        <button type="button" data-min="5" aria-pressed="false">5 min</button>
+        <button type="button" data-min="10" aria-pressed="true">10 min</button>
+        <button type="button" data-min="15" aria-pressed="false">15 min</button>
+      </div>
+      <div class="timer">
+        <div class="ring">
+          <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52" fill="none" stroke-width="10"/><circle class="ring-fg" id="ringFg" cx="60" cy="60" r="52" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="0"/></svg>
+          <div class="t" id="tLeft">1:15</div>
+        </div>
+        <div class="now">
+          <p class="eyebrow" id="nowStep">Ejercicio 1 de 8</p>
+          <h3 id="nowName">Calentamiento</h3>
+          <p id="nowHow"></p>
+          <div class="ctrl">
+            <button class="btn light" type="button" id="playBtn">▶ Empezar</button>
+            <button class="btn line" type="button" id="nextBtn">Siguiente</button>
+            <button class="btn line" type="button" id="resetBtn">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:14px">Tu sesión de hoy</h3>
+      <ol class="steps" id="steps"></ol>
+    </div>
+  </div>
+</section>
+
+<section id="mente" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Estimulación cognitiva</p>
+      <h2>Ejercita la mente también.</h2>
+      <p class="lead">Una muestra de lo que trae el Cuadernillo de Estimulación Cognitiva, más un calendario para no perder la constancia.</p>
+    </div>
+    <div class="duo">
+      <div class="panel" style="background:var(--card)">
+        <h3>Secuencia de colores</h3>
+        <p style="color:var(--muted);margin-top:6px">Mira el orden en que se iluminan las ligas y repítelo. Cada ronda suma un color.</p>
+        <div class="pads" id="pads"></div>
+        <div class="row" style="justify-content:space-between">
+          <div class="score"><div><b id="lvl">0</b>Ronda</div><div><b id="best">0</b>Mejor</div></div>
+          <button class="btn primary" type="button" id="gameBtn">Jugar</button>
+        </div>
+        <p class="msg" id="gameMsg" aria-live="polite">Presiona Jugar cuando estés listo.</p>
+      </div>
+      <div class="panel" style="background:var(--card)">
+        <h3>Calendario de seguimiento</h3>
+        <p style="color:var(--muted);margin-top:6px">Marca los días que hiciste tu rutina. Se guarda en este navegador.</p>
+        <div class="cal" id="cal"></div>
+        <div class="prog" aria-hidden="true"><div id="calProg" style="width:0"></div></div>
+        <p class="msg" id="calMsg" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="validacion">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">¿Existe la necesidad?</p>
+      <h2>Lo preguntamos antes de construirlo.</h2>
+      <p class="lead">Investigación mixta del Equipo 13-E: 100 encuestas digitales y 2 grupos focales con adultos mayores y sus familias.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="78" data-suf="%">78%</b><span>compraría un kit VitaMente</span></div>
+      <div class="stat"><b data-count="75" data-suf="%">75%</b><span>pagaría $369 MXN</span></div>
+      <div class="stat"><b data-count="100">100</b><span>encuestas digitales</span></div>
+      <div class="stat"><b data-count="2">2</b><span>grupos focales</span></div>
+    </div>
+    <div class="findings">
+      <div class="find"><h3>Instrucciones claras</h3><p>Los participantes valoraron mucho las instrucciones visuales, paso a paso y fáciles de seguir sin ayuda.</p></div>
+      <div class="find"><h3>Fuerza y concentración</h3><p>Fueron las dos áreas que más les importa trabajar, por eso tienen piezas dedicadas en la caja.</p></div>
+      <div class="find"><h3>Todo junto</h3><p>Lo que nos hace diferentes: cuatro enfoques con guía en un solo producto, sin comprar piezas por separado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="comprar" style="padding-top:0">
+  <div class="wrap">
+    <div class="buy">
+      <div class="buy-img"><img src="kit.webp" alt="Kit VitaMente completo"></div>
+      <div class="buy-body">
+        <p class="eyebrow">Kit VitaMente · Tu vitamina diaria</p>
+        <div class="price">$369 <small>MXN por kit</small></div>
+        <ul class="checks">
+          <li>5 ligas de resistencia con progresión por color</li>
+          <li>Liga larga de estiramiento, pelota mediana y pelota de mano</li>
+          <li>Conos de coordinación y 2 costales de ½ kg</li>
+          <li>Cuadernillo cognitivo, cuadernillo de instrucciones, tarjetas ilustradas y calendario</li>
+        </ul>
+        <div class="row">
+          <div class="qty"><button type="button" id="qMinus" aria-label="Quitar uno">−</button><output id="qOut">1</output><button type="button" id="qPlus" aria-label="Agregar uno">+</button></div>
+          <p class="total">Total: <b id="qTotal">$369</b></p>
+        </div>
+        <div class="row">
+          <button class="btn primary" type="button" id="reserveBtn">Apartar mi kit</button>
+          <label style="display:flex;gap:8px;align-items:center;font-weight:700;color:var(--muted)"><input type="checkbox" id="gift"> Es para regalar</label>
+        </div>
+        <p class="confirm" id="confirm" hidden></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap duo">
+    <div class="panel eco">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 22l22-10 22 10v22L32 54 10 44z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M10 22l22 10 22-10M32 32v22" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M38 41c0-5 4-8 9-8 0 5-3 9-9 8z" fill="currentColor"/></svg>
+      <div style="display:grid;gap:10px">
+        <p class="eyebrow">Elemento sustentable</p>
+        <h3 style="font-size:1.7rem">Una caja que se queda contigo.</h3>
+        <p style="color:var(--muted)">El empaque es de cartón reutilizable y reciclable, con divisiones para guardar cada pieza en su lugar después de entrenar.</p>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow" style="margin-bottom:6px">Preguntas frecuentes</p>
+      <details><summary>¿Necesito experiencia haciendo ejercicio?</summary><p>No. Las tarjetas ilustradas y el cuadernillo de instrucciones explican cada movimiento paso a paso. Empieza con la liga verde y avanza a tu ritmo.</p></details>
+      <details><summary>¿Cuánto tiempo al día?</summary><p>Con 5 a 15 minutos diarios es suficiente para empezar. Lo importante es la constancia, por eso incluimos el calendario de seguimiento.</p></details>
+      <details><summary>¿Es seguro?</summary><p>Los ejercicios son de bajo impacto y se pueden hacer apoyados en una silla. Si tienes alguna condición médica, consulta a tu médico antes de iniciar una rutina nueva.</p></details>
+      <details><summary>¿Quién creó VitaMente?</summary><p>El Equipo 13-E, como propuesta presentada en la Feria de Innovación Empresarial del 13 de septiembre de 2026.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="blob" style="width:300px;height:300px;left:-140px;bottom:-140px;border-radius:50%;opacity:.3"></div>
+  <div class="wrap">
+    <span class="logo"><svg style="color:var(--on-forest)"><use href="#mark"/></svg><span>VitaMente</span></span>
+    <p class="eyebrow" style="color:var(--sage-soft)">Tu vitamina diaria.</p>
+    <small>Proyecto del Equipo 13-E · Kit de movilidad y estimulación cognitiva</small>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
